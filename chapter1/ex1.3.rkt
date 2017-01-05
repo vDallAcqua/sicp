@@ -6,6 +6,7 @@
         ((and (< b a) (< b c)) (+ (sqrt a) (sqrt c)))
         (else (+ (sqrt a) (sqrt b)))))
 
+; Sample
 (SumsSquareOfTheTwoGreater 1 4 9)  ; --> 5
 (SumsSquareOfTheTwoGreater 4 1 9)  ; --> 5
 (SumsSquareOfTheTwoGreater 9 4 1)  ; --> 5
