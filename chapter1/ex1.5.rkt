@@ -18,10 +18,12 @@
 ;
 ; Note: (p) is recursively defined
 ; applicative-order evaluation: --> infinite loop, the evaluation of (p) recall another evaluation of (p)
+;    This is a tested result because the interpreter implementation use this type of evaluation.
+;
 ; normal-order evaluation: 
 ;
-;(if (= 0 0)
-;    0
-;    (p p))   --> not evaluated
+;   (if (= 0 0)
+;        0
+;       (p p))   --> not evaluated
 ;
-; --> 0
+;   --> 0
